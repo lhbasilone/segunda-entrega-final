@@ -1,0 +1,84 @@
+// COLORES
+
+$color1:#FFBA00;
+$color2:#000;
+
+// FIN COLORES
+
+
+
+
+// FUENTES
+
+$font1:"Bebas Neue" ;
+
+// FIN FUENTEs
+
+
+
+
+
+// EXTENDS
+
+.font_yellow{
+    font-family: $font1;
+    color: $color1;
+}
+
+
+.font_black{
+    font-family: $font1;
+    color: $color2;
+}
+
+// FIN EXTENDS
+
+
+
+
+
+// MIXINS
+
+@mixin box_size ($width, $height, $backcolor,){
+    height: $height;
+    width: $width;
+    background-color: $backcolor;
+}
+
+
+
+// FIN MIXINS
+
+
+
+
+
+
+// MAPS
+
+$fonts-ppal: (
+    f-ppal1: 5.50em,
+    f-ppal2: 3.75em,
+    f-ppal3: 1.875em,
+    );
+
+//slogan principal: verdadero bajon, solo merlo, hace pedido//
+@each $f-ppal, $font in $fonts-ppal{
+    .maps--#{$f-ppal} {
+        font-size: $font;
+    }
+    
+}
+
+// FIN MAPS
+
+
+
+// IMPORTS
+
+
+@import "_galeria";
+
+
+
+// FIN IMPORTS 
